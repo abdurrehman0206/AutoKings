@@ -175,6 +175,9 @@ footer {
 //homepage
 #home-root {
   .hero {
+    background-color: mix(white, $primary-color, 95%);
+    border: 1px solid #dddddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     background-image: url("./assets/im\ \(24\).jpeg");
     background-size: cover;
@@ -214,7 +217,7 @@ footer {
   }
 
   .announcements {
-    padding: 50px 0;
+    margin-top: 30px;
     text-align: center;
 
     h2 {
@@ -223,6 +226,9 @@ footer {
     }
 
     .announcement {
+      background-color: mix(white, $primary-color, 95%);
+      border: 1px solid #dddddd;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
       background-color: mix(white, $primary-color, 95%);
       padding: 20px;
       border-radius: 5px;
@@ -257,6 +263,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     // padding: 50px 0;
+    margin-top: 30px;
 
     h2 {
       text-align: center;
@@ -264,15 +271,21 @@ footer {
       margin-bottom: 30px;
     }
     .offer {
+      background-color: mix(white, $primary-color, 95%);
+      border: 1px solid #dddddd;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
       width: 100%;
       // max-width: 800px;
       height: 200px;
       // margin: 0 auto 30px;
+      margin-bottom: 20px;
+
       display: flex;
       flex-wrap: wrap;
       align-items: center;
 
       &:nth-child(even) {
+        border-radius: 5px 100px 100px 5px;
         flex-direction: row-reverse;
         .offer-info {
           padding-right: 20px;
@@ -281,8 +294,12 @@ footer {
             text-align: left;
           }
         }
+        .offer-image {
+          margin-right: 10px;
+        }
       }
       &:nth-child(odd) {
+        border-radius: 100px 5px 5px 100px;
         .offer-info {
           padding-left: 20px;
           h2,
@@ -290,9 +307,13 @@ footer {
             text-align: right;
           }
         }
+        .offer-image {
+          margin-left: 10px;
+        }
       }
 
       .offer-info {
+        padding: 10px;
         flex: 1;
         h2,
         p {
@@ -315,9 +336,12 @@ footer {
         display: flex;
         // flex: 1;
         overflow: hidden;
+
+        // padding: 10px;
+
         img {
-          height: 200px;
-          width: 200px;
+          height: 180px;
+          width: 180px;
           // max-width: 100%;
           // height: auto;
           object-fit: cover;
@@ -343,7 +367,7 @@ footer {
         }
         .offer-image {
           border: 1px solid red;
-
+          margin-right: 0;
           display: flex;
           overflow: hidden;
           flex: 1;
@@ -359,6 +383,7 @@ footer {
   }
 
   .reviews {
+    margin-top: 10px;
     text-align: center;
 
     h2 {
@@ -368,6 +393,9 @@ footer {
 
     .review {
       background-color: mix(white, $primary-color, 95%);
+      border: 1px solid #dddddd;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
       padding: 20px;
       border-radius: 5px;
       margin-bottom: 20px;
@@ -467,9 +495,9 @@ footer {
 #book-root {
   .booking--container {
     background-color: mix(white, $primary-color, 95%);
-    border-radius: 5px;
     border: 1px solid #dddddd;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
     padding: 10px;
     color: #333333;
 

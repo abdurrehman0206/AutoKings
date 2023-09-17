@@ -153,6 +153,9 @@ footer .footer--hours {
 }
 
 #home-root .hero {
+  background-color: #f4f4f6;
+  border: 1px solid #dddddd;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   background-image: url("./assets/im (24).jpeg");
   background-size: cover;
@@ -186,7 +189,7 @@ footer .footer--hours {
   background-color: #eb6e47;
 }
 #home-root .announcements {
-  padding: 50px 0;
+  margin-top: 30px;
   text-align: center;
 }
 #home-root .announcements h2 {
@@ -194,6 +197,9 @@ footer .footer--hours {
   margin-bottom: 30px;
 }
 #home-root .announcements .announcement {
+  background-color: #f4f4f6;
+  border: 1px solid #dddddd;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #f4f4f6;
   padding: 20px;
   border-radius: 5px;
@@ -222,6 +228,7 @@ footer .footer--hours {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 30px;
 }
 #home-root .offers h2 {
   text-align: center;
@@ -229,13 +236,18 @@ footer .footer--hours {
   margin-bottom: 30px;
 }
 #home-root .offers .offer {
+  background-color: #f4f4f6;
+  border: 1px solid #dddddd;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
   height: 200px;
+  margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 #home-root .offers .offer:nth-child(even) {
+  border-radius: 5px 100px 100px 5px;
   flex-direction: row-reverse;
 }
 #home-root .offers .offer:nth-child(even) .offer-info {
@@ -245,6 +257,12 @@ footer .footer--hours {
 #home-root .offers .offer:nth-child(even) .offer-info p {
   text-align: left;
 }
+#home-root .offers .offer:nth-child(even) .offer-image {
+  margin-right: 10px;
+}
+#home-root .offers .offer:nth-child(odd) {
+  border-radius: 100px 5px 5px 100px;
+}
 #home-root .offers .offer:nth-child(odd) .offer-info {
   padding-left: 20px;
 }
@@ -252,7 +270,11 @@ footer .footer--hours {
 #home-root .offers .offer:nth-child(odd) .offer-info p {
   text-align: right;
 }
+#home-root .offers .offer:nth-child(odd) .offer-image {
+  margin-left: 10px;
+}
 #home-root .offers .offer .offer-info {
+  padding: 10px;
   flex: 1;
 }
 #home-root .offers .offer .offer-info h2,
@@ -274,8 +296,8 @@ footer .footer--hours {
   overflow: hidden;
 }
 #home-root .offers .offer .offer-image img {
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -301,6 +323,7 @@ footer .footer--hours {
   }
   #home-root .offers .offer .offer-image {
     border: 1px solid red;
+    margin-right: 0;
     display: flex;
     overflow: hidden;
     flex: 1;
@@ -314,6 +337,7 @@ footer .footer--hours {
   }
 }
 #home-root .reviews {
+  margin-top: 10px;
   text-align: center;
 }
 #home-root .reviews h2 {
@@ -322,6 +346,8 @@ footer .footer--hours {
 }
 #home-root .reviews .review {
   background-color: #f4f4f6;
+  border: 1px solid #dddddd;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -403,9 +429,9 @@ footer .footer--hours {
 
 #book-root .booking--container {
   background-color: #f4f4f6;
-  border-radius: 5px;
   border: 1px solid #dddddd;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
   padding: 10px;
   color: #333333;
   max-width: 500px;
