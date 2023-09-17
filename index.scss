@@ -353,22 +353,24 @@ footer {
         flex-direction: column-reverse !important;
         margin: 0 auto 30px;
         height: 300px;
+        border-radius: 5px !important;
         .offer-info {
-          background-color: $background-color;
+          background-color: mix(white, $primary-color, 95%);
+          border: 1px solid #dddddd;
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
           padding: 10px;
           position: absolute;
           margin: 0 5px;
           bottom: 5px;
           border-radius: 5px;
-          border: 2px solid $accent-color;
+
           h2,
           p {
             text-align: center !important;
           }
         }
         .offer-image {
-          border: 1px solid red;
-          margin-right: 0;
+          margin: 0 !important;
           display: flex;
           overflow: hidden;
           flex: 1;
