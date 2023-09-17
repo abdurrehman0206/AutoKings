@@ -116,59 +116,140 @@ nav {
   }
 }
 //footer
-footer {
-  width: 100%;
+// footer {
+//   width: 100%;
 
+//   margin-top: auto;
+
+//   background-color: $primary-color;
+//   color: $background-color;
+//   padding: 20px;
+//   display: flex;
+//   justify-content: space-between;
+//   flex-wrap: wrap;
+
+//   h2 {
+//     font-size: 24px;
+//     margin-bottom: 10px;
+//   }
+
+//   ul {
+//     list-style: none;
+//     padding: 0;
+//     margin: 0;
+
+//     li {
+//       strong {
+//         display: block;
+//       }
+//       margin-bottom: 10px;
+//     }
+//   }
+
+//   .footer--about {
+//     flex: 1;
+//     max-width: 400px;
+
+//     p {
+//       font-size: 14px;
+//     }
+//   }
+
+//   .footer--info,
+//   .footer--hours {
+//     flex: 1;
+//     // max-width: 250px;
+//   }
+//   @media (max-width: 768px) {
+//     flex-direction: column;
+//     position: relative;
+//   }
+// }
+
+.footer {
   margin-top: auto;
-
   background-color: $primary-color;
   color: $background-color;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    li {
-      strong {
-        display: block;
+  text-align: left;
+  width: 100%;
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    .about {
+      margin-bottom: 20px;
+    }
+    .about,
+    .contact,
+    .hours {
+      width: 300px;
+      // flex: 1;
+      h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
       }
-      margin-bottom: 10px;
+
+      ul {
+        font-size: 16px;
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 10px;
+          line-height: 1.4;
+
+          a {
+            color: $accent-color;
+            text-decoration: none;
+            transition: color 0.2s;
+
+            &:hover {
+              color: $hover-color;
+            }
+          }
+          strong {
+            display: block;
+          }
+        }
+      }
     }
   }
 
-  .footer--about {
-    flex: 1;
-    max-width: 400px;
+  .footer-bottom {
+    // margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid $accent-color;
+    font-size: 0.9rem;
 
     p {
-      font-size: 14px;
+      text-align: center;
+      margin: 0;
     }
   }
 
-  .footer--info,
-  .footer--hours {
-    flex: 1;
-    // max-width: 250px;
-  }
   @media (max-width: 768px) {
-    flex-direction: column;
-    position: relative;
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+
+      .about,
+      .contact,
+      .hours {
+        flex: none;
+        width: 100%;
+        text-align: left;
+      }
+    }
   }
 }
 
+//root
 .page-root {
   max-width: 1200px;
-  margin: auto;
+  // margin: auto;
   padding: 10px;
   width: 100%;
 }

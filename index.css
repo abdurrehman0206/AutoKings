@@ -103,52 +103,90 @@ nav {
   }
 }
 
-footer {
-  width: 100%;
+.footer {
   margin-top: auto;
   background-color: #1f2b50;
   color: #ffffff;
-  padding: 20px;
+  text-align: left;
+  width: 100%;
+}
+.footer .footer-content {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
-footer h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.footer .footer-content .about {
+  margin-bottom: 20px;
 }
-footer ul {
+.footer .footer-content .about,
+.footer .footer-content .contact,
+.footer .footer-content .hours {
+  width: 300px;
+}
+.footer .footer-content .about h3,
+.footer .footer-content .contact h3,
+.footer .footer-content .hours h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.footer .footer-content .about ul,
+.footer .footer-content .contact ul,
+.footer .footer-content .hours ul {
+  font-size: 16px;
   list-style: none;
   padding: 0;
-  margin: 0;
 }
-footer ul li {
+.footer .footer-content .about ul li,
+.footer .footer-content .contact ul li,
+.footer .footer-content .hours ul li {
   margin-bottom: 10px;
+  line-height: 1.4;
 }
-footer ul li strong {
+.footer .footer-content .about ul li a,
+.footer .footer-content .contact ul li a,
+.footer .footer-content .hours ul li a {
+  color: #e64a19;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer .footer-content .about ul li a:hover,
+.footer .footer-content .contact ul li a:hover,
+.footer .footer-content .hours ul li a:hover {
+  color: #eb6e47;
+}
+.footer .footer-content .about ul li strong,
+.footer .footer-content .contact ul li strong,
+.footer .footer-content .hours ul li strong {
   display: block;
 }
-footer .footer--about {
-  flex: 1;
-  max-width: 400px;
+.footer .footer-bottom {
+  padding: 20px;
+  border-top: 1px solid #e64a19;
+  font-size: 0.9rem;
 }
-footer .footer--about p {
-  font-size: 14px;
-}
-footer .footer--info,
-footer .footer--hours {
-  flex: 1;
+.footer .footer-bottom p {
+  text-align: center;
+  margin: 0;
 }
 @media (max-width: 768px) {
-  footer {
+  .footer .footer-content {
     flex-direction: column;
-    position: relative;
+    align-items: center;
+  }
+  .footer .footer-content .about,
+  .footer .footer-content .contact,
+  .footer .footer-content .hours {
+    flex: none;
+    width: 100%;
+    text-align: left;
   }
 }
 
 .page-root {
   max-width: 1200px;
-  margin: auto;
   padding: 10px;
   width: 100%;
 }
