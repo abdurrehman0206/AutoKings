@@ -108,5 +108,4 @@ function initFormValidation() {
     }
   }
 }
-
-
+initFormValidation();

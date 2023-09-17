@@ -92,3 +92,5 @@ function initArticles() {
 
   generateArticleCards();
 }
+
+initArticles();

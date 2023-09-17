@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./index.css" />
     <title>AutoKings</title>
   </head>
@@ -22,25 +18,135 @@
           <div class="bar"></div>
         </div>
         <ul>
-          <li><a href="#" class="nav--link" id="home"> Home </a></li>
+          <li><a href="." class="nav--link active" id="home"> Home </a></li>
           <li>
-            <a href="#about-us" class="nav--link" id="about"> About Us </a>
+            <a href="about.html" class="nav--link" id="about"> About Us </a>
           </li>
           <li>
-            <a href="#our-services" class="nav--link" id="services">
+            <a href="services.html" class="nav--link" id="services">
               Services
             </a>
           </li>
           <li>
-            <a href="#book-appointment" class="nav--link" id="book"> Book </a>
+            <a href="book.html" class="nav--link" id="book"> Book </a>
           </li>
           <li>
-            <a href="#blogs" class="nav--link" id="articles"> Articles </a>
+            <a href="articles.html" class="nav--link" id="articles">
+              Articles
+            </a>
           </li>
         </ul>
       </div>
     </nav>
-    <div id="page-root"></div>
+    <div id="home-root" class="page-root">
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Welcome to AutoKing</h1>
+          <p>Your Trusted Car Repair Shop</p>
+          <a href="#" id="book" class="cta-button nav--link"
+            >Book Appointment</a
+          >
+        </div>
+      </section>
+
+      <section class="announcements">
+        <h2>Special Offers</h2>
+        <div class="announcement">
+          <h3>April Special</h3>
+          <p>Get 10% off for any online web booking.</p>
+        </div>
+        <div class="announcement">
+          <h3>Special Offer Extended</h3>
+          <p>Vehicle Servicing Package for $159</p>
+          <p>Package includes:</p>
+          <ul>
+            <li>Replace engine oil (up to 5 litres) and oil filter</li>
+            <li>Inspect all water levels</li>
+            <li>
+              Inspect transmission and differential oil levels (where
+              applicable)
+            </li>
+            <li>Inspect brake and steering fluid levels</li>
+            <li></li>
+          </ul>
+        </div>
+      </section>
+      <section class="offers">
+        <h2>We Offer</h2>
+        <div class="offer">
+          <div class="offer-image">
+            <img src="../assets/im (5).jpeg" alt="Car Maintenance" />
+          </div>
+          <div class="offer-info">
+            <h2>Car Maintenance</h2>
+            <p>
+              We offer a wide range of car maintenance services to keep your
+              vehicle in top shape. From routine oil changes to tire rotations,
+              our expert team ensures your car runs smoothly and efficiently.
+            </p>
+          </div>
+        </div>
+
+        <div class="offer">
+          <div class="offer-image">
+            <img src="../assets/im (2).jpeg" alt="Mechanical Repairs" />
+          </div>
+          <div class="offer-info">
+            <h2>Mechanical Repairs</h2>
+            <p>
+              Our experienced technicians can handle everything from minor fixes
+              to major repairs. We use high-quality parts to ensure your vehicle
+              is back on the road safely.
+            </p>
+          </div>
+        </div>
+        <div class="offer">
+          <div class="offer-image">
+            <img src="../assets/im (23).jpeg" alt="Servicing" />
+          </div>
+          <div class="offer-info">
+            <h2>Servicing</h2>
+            <p>
+              Your car deserves the best care possible. Our comprehensive
+              servicing includes a full check-up of all components, fluids, and
+              systems to ensure your car is running smoothly and safely.
+            </p>
+          </div>
+        </div>
+
+        <div class="offer">
+          <div class="offer-image">
+            <img
+              src="../assets/im (18).jpeg"
+              alt="Safety Certificate Inspections"
+            />
+          </div>
+          <div class="offer-info">
+            <h2>Safety Certificate Inspections</h2>
+            <p>
+              Our Approved Inspection Station (AIS) can provide you with Safety
+              Certificate inspections (roadworthy / RWC / COI) to ensure that
+              your vehicle meets the legal safety standards.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+          <p>"AutoKing provides excellent service. I highly recommend them!"</p>
+          <p class="author">- John D.</p>
+        </div>
+        <div class="review">
+          <p>
+            "I've been a loyal customer of AutoKing for years. They never
+            disappoint!"
+          </p>
+          <p class="author">- Sarah W.</p>
+        </div>
+      </section>
+    </div>
     <footer>
       <div class="footer--info">
         <h2>Contact Information</h2>
@@ -73,10 +179,7 @@
         </p>
       </div>
     </footer>
-
     <script src="./utils/nav.js"></script>
-    <script src="./utils/formValidation.js"></script>
-    <script src="./utils/articles.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
