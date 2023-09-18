@@ -115,56 +115,6 @@ nav {
     }
   }
 }
-//footer
-// footer {
-//   width: 100%;
-
-//   margin-top: auto;
-
-//   background-color: $primary-color;
-//   color: $background-color;
-//   padding: 20px;
-//   display: flex;
-//   justify-content: space-between;
-//   flex-wrap: wrap;
-
-//   h2 {
-//     font-size: 24px;
-//     margin-bottom: 10px;
-//   }
-
-//   ul {
-//     list-style: none;
-//     padding: 0;
-//     margin: 0;
-
-//     li {
-//       strong {
-//         display: block;
-//       }
-//       margin-bottom: 10px;
-//     }
-//   }
-
-//   .footer--about {
-//     flex: 1;
-//     max-width: 400px;
-
-//     p {
-//       font-size: 14px;
-//     }
-//   }
-
-//   .footer--info,
-//   .footer--hours {
-//     flex: 1;
-//     // max-width: 250px;
-//   }
-//   @media (max-width: 768px) {
-//     flex-direction: column;
-//     position: relative;
-//   }
-// }
 
 .footer {
   margin-top: auto;
@@ -683,126 +633,69 @@ nav {
 }
 
 //articles page
-
 #articles-root {
-  .articles {
+  .article-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
   }
 
-  .article-card {
+  article {
     background-color: mix(white, $primary-color, 95%);
     border: 1px solid #dddddd;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 350px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.2s;
-    padding: 15px;
-
-    &:hover {
-      transform: translateY(-5px);
-    }
-
-    h3 {
-      font-size: 1.5rem;
-      // margin: 1rem 1rem 0.5rem 1rem;
-    }
-
-    p {
-      font-size: 1rem;
-
-      color: #777;
-      margin-bottom: 15px;
-    }
-
-    .read-article {
-      width: max-content;
-      border-radius: 5px;
-      margin: auto auto 0px 0px;
-      background-color: $accent-color;
-      color: #fff;
-      border: none;
-      padding: 10px 10px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background-color 0.2s;
-
-      &:hover {
-        background-color: $hover-color;
-      }
-    }
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 100%;
   }
 
-  @media (max-width: 768px) {
-    .articles {
-      justify-content: center;
-    }
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
 
-    .article-card {
-      width: 100%;
-      margin: 10px;
+  .article-info {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .article-list {
+      flex-direction: column;
+      gap: 1rem;
     }
   }
 }
 
-//articles popup
-.popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9999;
-  display: flex;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  overflow-y: auto;
-  margin: auto;
-  .popup-content {
-    position: relative;
-    margin: auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    width: 90%;
-    //   max-width: 400px;
-    text-align: left;
-    overflow-y: auto;
-  }
-  .popup-close {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    background-color: $accent-color;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+//success booking
+.success-message {
+  background-color: mix(white, $primary-color, 95%);
+  border: 1px solid #dddddd;
+  color: green;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+
+  p {
     font-size: 18px;
-    font-weight: bold;
-    color: $background-color;
-    border-radius: 0% 5px 0% 50%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+  }
+
+  button {
+    background-color: $accent-color;
+    color: white;
+    font-weight: 700;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+
     &:hover {
       background-color: $hover-color;
     }
-  }
-  .popup-title {
-    color: $primary-color;
-  }
-  .popup-info {
-    color: $accent-color;
-    margin-bottom: 10px;
   }
 }
