@@ -249,7 +249,7 @@ nav {
 //root
 .page-root {
   max-width: 1200px;
-  // margin: auto;
+  margin: auto;
   padding: 10px;
   width: 100%;
 }
@@ -325,7 +325,11 @@ nav {
 
       p {
         font-size: 16px;
-        margin: 5px 0;
+        margin-bottom: 10px;
+      }
+      a {
+        margin-top: 5px;
+        padding: 10px 20px;
       }
 
       ul {
@@ -339,6 +343,7 @@ nav {
       }
     }
   }
+
   .offers {
     display: flex;
     flex-wrap: wrap;

@@ -187,6 +187,7 @@ nav {
 
 .page-root {
   max-width: 1200px;
+  margin: auto;
   padding: 10px;
   width: 100%;
 }
@@ -252,7 +253,11 @@ nav {
 }
 #home-root .announcements .announcement p {
   font-size: 16px;
-  margin: 5px 0;
+  margin-bottom: 10px;
+}
+#home-root .announcements .announcement a {
+  margin-top: 5px;
+  padding: 10px 20px;
 }
 #home-root .announcements .announcement ul {
   list-style: disc;
